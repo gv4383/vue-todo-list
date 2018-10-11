@@ -4,7 +4,7 @@
     <!-- <HelloWorld msg="Welcome to Your Vue.js App"/> -->
     <h1>Vue To-Do List</h1>
     <main>
-      <p :key="item" v-for="item in list">{{ item }}</p>
+      <p :key="index" v-for="(item, index) in list">{{ item }}</p>
     </main>
   </div>
 </template>
