@@ -1,11 +1,15 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
     <!-- <HelloWorld msg="Welcome to Your Vue.js App"/> -->
-    <h1>Vue To-Do List</h1>
-    <main>
-      <p :key="index" v-for="(item, index) in list">{{ item }}</p>
-    </main>
+    <div class="main-container">
+      <div class="title">
+        <img alt="Vue logo" src="./assets/logo.png">
+        <h1>Vue To-Do List</h1>
+      </div>
+      <main>
+        <p :key="index" v-for="(item, index) in list">{{ item }}</p>
+      </main>
+    </div>
   </div>
 </template>
 
